@@ -37,18 +37,19 @@ public class Main {
         //Задание 4
         System.out.println("Задание №4");
 
-        int needDay = 1;
-        int deliveryDistance = 5;
+        int needDay = 0;
+        int deliveryDistance = 195;
         if (deliveryDistance > 20) {
             needDay++;
         }
         if (deliveryDistance > 60) {
             needDay++;
         }
-        if (deliveryDistance > 100) {
-            needDay++;
-        }
-        System.out.println("Потребуется дней " + needDay);
+        if (deliveryDistance >= 100 ) {
+            System.out.println(" Доставки нет");
+        }else{
+
+        System.out.println("Потребуется дней " + needDay);}
 
         //Задание 5
         System.out.println("Задание №5");
@@ -88,8 +89,8 @@ public class Main {
                 System.out.println("Ноябрь");
                 break;
             case 12:
-                System.out.println("Декабрь");
-                //уцке
+                 System.out.println("Декабрь");
+
         }
     }
 }
